@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quer Namorar Comigo?</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Quer namorar comigo?</h1>
+        <div class="buttons">
+<button onclick="respostaSim()">Sim</button>
+<button onclick="respostaNao()">Não</button>
+</div>
+<div id="mensagemSim" style="display:none;">
+Agora somos namorados pra sempre!
+        </div>
+    </div>
+
+    <script>
+        function respostaSim() {
+            
+            document.getElementById("mensagemSim").style.display = "block";
+        }
+
+        function respostaNao() {
+            
+            document.querySelector("button:nth-child(2)").style.display = "none";
+        }
+    </script>
+
+</body>
+</html>
